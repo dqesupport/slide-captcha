@@ -67,6 +67,8 @@ class SlideCaptcha
      */
     protected $allowedBackgroundImageTypes = array('image/png', 'image/jpeg', 'image/gif');
 
+    private $isDrawLogo = false;
+
     public function __construct($imWidth = 240, $imHeight = 150, $markWidth = 50, $markHeight = 50)
     {
         $this->imWidth = $imWidth;
